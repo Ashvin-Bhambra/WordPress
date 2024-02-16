@@ -1,3 +1,18 @@
+variable "secret_key" {
+  description = "The secret key"
+  type        = string
+}
+
+variable "access_key" {
+  description = "The access key"
+  type        = string
+}
+
+variable "the_region" {
+  description = "Selected region"
+  default     = "eu-west-1"
+}
+
 variable "instance_type_size" {
     default = "t2.micro"
 

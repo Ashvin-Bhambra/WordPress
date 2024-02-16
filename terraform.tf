@@ -6,10 +6,10 @@ terraform {
     }
   }
   cloud {
-    organization = "ashvinbhambra"
+    organization = "wordpress-miniproject"
  
     workspaces {
-      name = "WordPress"
+      name = "wordpress-miniproject"
   }
 }
 }

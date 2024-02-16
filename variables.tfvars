@@ -1,0 +1,6 @@
+is_dev              = "yes" 
+the_region          = "eu-west-1"
+instance_ami        = "ami-08f32efd140b7d89f"
+instance_type       = "t2.micro"              
+access_key          = ""
+secret_key          = ""
