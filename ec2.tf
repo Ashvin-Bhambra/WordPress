@@ -9,6 +9,4 @@ resource "aws_instance" "instance_1" {
     #private_key =
     host = self.public_ip 
  }
-
 }
-

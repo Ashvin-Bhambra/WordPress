@@ -13,15 +13,26 @@ variable "the_region" {
   default     = "eu-west-1"
 }
 
-variable "instance_type_size" {
-    default = "t2.micro"
-
+variable "public_subnet_cidrs" {
+  type        = list(string)
+  description = "Public Subnet CIDR Values"
+  default     = ["10.0.0.0/27", "10.0.0.32/27"]
 }
-variable "port_list" {
-    type = list(number)
-    default = [80,443,22]
 
+variable "private_application_subnet_cidrs" {
+  type        = list(string)
+  description = "Public Subnet CIDR Values"
+  default     = ["10.0.0.64/27", "10.0.0.96/27"]
 }
-variable "cidr_block_for_ingress"{
-    default = "0.0.0.0/0"
+
+variable "private_data_subnet_cidrs" {
+  type        = list(string)
+  description = "Public Subnet CIDR Values"
+  default     = ["10.0.0.128/27", "10.0.0.160/27"]
+}
+
+variable "azs" {
+  type        = list(string)
+  description = "Availability Zones"
+  default     = ["eu-west-1a", "eu-west-1b"]
 }
